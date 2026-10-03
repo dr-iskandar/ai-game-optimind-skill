@@ -6,9 +6,11 @@ A reusable AI Game Studio workflow for **mobile-portrait 2D web games**, designe
 
 **Important:** a generated starter is not the finished custom game. The skill asks for explicit approval of the *game concept* and *art direction* separately before autonomous implementation. Push, publish, release, destructive edits and spending require distinct permission.
 
-## Download the complete Sprint 1 repository package
+## Repository contents
 
-[Complete source package](https://github.com/dr-iskandar/ai-game-optimind-skill/blob/main/dist/ai-game-optimind-skill-sprint1.zip) (download and extract the top-level `ai-game-optimind-skill` folder).
+Sprint 1 source is checked in directly: `SKILL.md`, `references/`, `schemas/`,
+`examples/`, `scripts/`, `templates/mobile-portrait/`, `tests/` and GitHub Actions CI.
+A ZIP snapshot is also available from the project development conversation if needed.
 
 ## Install in Codex
 

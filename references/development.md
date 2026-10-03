@@ -1,0 +1,2 @@
+# Development
+Start Vite + vanilla JS/CSS for simple mobile portrait matching/memory/quiz games; use Phaser when physics, large scene graphs or camera control actually need it. Separate pure mechanics from DOM rendering. Check existing branches, dependencies, and uncommitted work before editing. Use safe area insets and dynamic viewport units. For LAN, Vite listening on 0.0.0.0 shares the app with other devices on the same Wi-Fi (not a public internet tunnel).

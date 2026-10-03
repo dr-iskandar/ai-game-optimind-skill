@@ -1,0 +1,2 @@
+# Quality assurance
+Sprint 1: schema/spec validation, two distinct approval gates, no overwrite during scaffolding, pure-rule unit tests and Vite build checks. Verify the negative cases, not just success paths. Later sprints: browser automation and actual screenshots at 360x800, 390x844, 430x932; device performance, assets 404 inspection, and memory monitoring. Never claim a browser/device validation when only Node/build ran. Report what passed, failed, and is unverified.

@@ -1,0 +1,2 @@
+# Game designer guidance
+Obtain player goal, intended audience, genre, session duration, orientation, input, primary loop, scoring, win/loss, reset semantics, timers, modal pauses and locales. Generate a readable one-page concept + structured game-spec. Include concrete acceptance tests for success, failure and restart. Distinguish display order from input order (e.g. satay visually top-to-bottom but tapped bottom-to-top). Treat suggestions as proposals, not user decisions.

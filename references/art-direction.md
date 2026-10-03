@@ -1,0 +1,2 @@
+# Art direction
+Translate visual references into design-system decisions: mood, palette, illustration style, perspective, typography, readable sizes, lighting, HUD composition, crop behavior and animation feel. Present an actual sample if available; otherwise clearly call it a proposal/moodboard. Record art approval separately from concept approval. Test portrait widths of 360, 390 and 430px and a centered phone-width desktop display.

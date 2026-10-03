@@ -1,0 +1,2 @@
+# Animation & audio
+Favor CSS transforms and opacity for button feedback and ingredient movement. WebP spritesheets suit fire, smoke, charcoal and sparkle. Specify frame geometry/FPS/loop, provide reduced-motion behavior and a sound toggle. Trigger audio only after a user gesture to respect browser autoplay. Pause the timer throughout modals when the approved spec calls for it. Cancel stale delayed callbacks after reset/restart.

@@ -1,0 +1,2 @@
+# Assets
+Design small readable scalable UI using SVG when appropriate; use WebP for raster environments and frame effects. Track each asset's source, permission/license, intended use, dimensions and (for sprites) frame count, columns, rows and FPS in an asset manifest. Never assume web availability means copyright-free. User fonts and artwork require explicit redistribution permission. Automatic cropping/optimization is planned for Sprint 2, not implemented here.

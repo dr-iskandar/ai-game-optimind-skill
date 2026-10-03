@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Optimind Asset Manifest contract",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "gameId",
+    "assets"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "gameId": {
+      "type": "string"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "source",
+          "permission",
+          "role"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "source": {
+            "enum": [
+              "user-upload",
+              "ai-generated",
+              "third-party"
+            ]
+          },
+          "permission": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "sourceUrl": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "width": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "height": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "sprite": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "frames": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "columns": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "rows": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "frameWidth": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "frameHeight": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "fps": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "loop": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

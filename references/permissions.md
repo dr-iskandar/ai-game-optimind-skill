@@ -1,0 +1,2 @@
+# Permissions
+The conversation must contain explicit concept approval and separately explicit art-direction approval. Store the actual source statement, timestamp and spec revision; never invent these. Revisions changing approved mechanics/art require renewed approval for affected gate. Local prototyping is distinct from publishing, spending, deleting files or GitHub writes; obtain authorization for consequential external actions. Do not force-push or bundle user proprietary assets without permission.

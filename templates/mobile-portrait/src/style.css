@@ -1,0 +1,17 @@
+:root{font-family:system-ui,-apple-system,sans-serif;color:#faf5eb;background:#11182d}
+*{box-sizing:border-box}html,body,#app{margin:0;min-width:320px;min-height:100%}
+.shell{min-height:100vh;min-height:100dvh;display:grid;place-items:center}
+.phone{width:100%;max-width:430px;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:space-evenly;gap:9px;padding:max(20px,env(safe-area-inset-top)) 18px max(18px,env(safe-area-inset-bottom));background:radial-gradient(circle at 50% 32%,#364982,#1a2a4b 70%,#142039)}
+h1{font-size:clamp(30px,8vw,41px);margin:2px 0 8px;text-align:center}header{width:100%}.eyebrow{text-align:center;font-size:11px;letter-spacing:.1em;color:#aec3e8;font-weight:bold}
+.hud{display:flex;justify-content:space-between;padding:12px 16px;background:#ffffff22;border-radius:16px;font-weight:bold}
+.hint{text-align:center;color:#d0ddf2;margin:0}.target,.selected{width:100%;display:flex;align-items:center;justify-content:center;gap:13px;min-height:75px;border-radius:17px;background:#ffffff1a}.target span,.selected span{display:grid;place-items:center;width:50px;height:50px;border-radius:12px;background:#ffdc94;color:#273553;font-size:33px}.selected{color:#c7d9f5;font-size:26px}.selected span{background:#c4dffa}.message{text-align:center;min-height:23px;color:#ffdf9c;font-weight:bold}
+button{border:0;cursor:pointer;touch-action:manipulation}
+.controls{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.controls button{min-height:82px;border-radius:18px;background:#f5d18e;color:#283558;font-size:43px;box-shadow:0 4px 0 #bfa162}
+.controls button:active{transform:translateY(2px)}
+.actions{width:100%;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.actions button{padding:12px;min-height:50px;border-radius:12px;background:#5470aa;color:#fff;font-weight:bold}
+footer{text-align:center;color:#a9bdde;font-size:11px}
+@media(min-width:600px){.shell{padding:22px}.phone{height:min(820px,calc(100dvh - 44px));min-height:0;border-radius:30px;border:1px solid #54658a;box-shadow:0 18px 65px #0008}}
+@media(max-height:650px){.controls button{min-height:55px}.target,.selected{min-height:53px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

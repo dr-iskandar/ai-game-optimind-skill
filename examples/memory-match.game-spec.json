@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0",
+  "id": "memory-match",
+  "title": "Memory Match",
+  "revision": 1,
+  "pitch": "Tap cards to find all pairs before the time expires.",
+  "platform": {
+    "target": "web",
+    "orientation": "portrait",
+    "input": "tap",
+    "locales": [
+      "id",
+      "en"
+    ]
+  },
+  "gameplay": {
+    "genre": "memory",
+    "goal": "Reveal every matching pair of cards.",
+    "coreLoop": [
+      "Flip first card",
+      "Flip second card",
+      "Keep match or conceal mismatch"
+    ],
+    "winCondition": "All pairs matched.",
+    "loseCondition": "Timer runs out first.",
+    "resetBehavior": "Restart cards and timer for new match.",
+    "timer": {
+      "enabled": true,
+      "seconds": 90,
+      "pauseDuringModal": true
+    },
+    "rules": [
+      "Only two face-up cards at once",
+      "Correct pairs stay revealed"
+    ],
+    "states": [
+      "intro",
+      "playing",
+      "resolving",
+      "game-over"
+    ]
+  },
+  "artDirection": {
+    "style": "rounded colorful casual game",
+    "palette": [
+      "#3C5B9B",
+      "#FFCB66",
+      "#F9F7F1"
+    ],
+    "assetStrategy": "hybrid",
+    "motion": "CSS flip transition"
+  },
+  "acceptanceCriteria": [
+    "Only two cards can be opened during a comparison",
+    "Completing all pairs triggers win",
+    "Mobile portrait responsive 360px and desktop centered"
+  ]
+}

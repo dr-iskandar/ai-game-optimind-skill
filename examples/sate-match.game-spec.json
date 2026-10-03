@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "id": "sate-match",
+  "title": "Sate Match",
+  "revision": 1,
+  "pitch": "Build the skewer in the specified order, then answer a quiz.",
+  "platform": {
+    "target": "web",
+    "orientation": "portrait",
+    "input": "tap",
+    "locales": [
+      "id",
+      "en"
+    ]
+  },
+  "gameplay": {
+    "genre": "matching",
+    "goal": "Assemble the correct satay ingredient order.",
+    "coreLoop": [
+      "Read top-to-bottom visual order",
+      "Tap ingredients bottom-to-top",
+      "Correct skewer awards points and immediately opens quiz"
+    ],
+    "winCondition": "Score points for correct sticks until the round ends.",
+    "loseCondition": "Lose all hearts or reach the time limit.",
+    "resetBehavior": "Clear current skewer only, retain order, score, hearts, multiplier and timer.",
+    "timer": {
+      "enabled": true,
+      "seconds": 60,
+      "pauseDuringModal": true
+    },
+    "rules": [
+      "One heart lost only on wrong completed skewer; score unchanged",
+      "Correct skewer immediately launches quiz",
+      "Quiz correct adds 0.5 multiplier; quiz wrong has no penalty",
+      "Time freezes through quiz result display and resumes on quiz close"
+    ],
+    "states": [
+      "intro",
+      "playing",
+      "quiz",
+      "game-over"
+    ]
+  },
+  "artDirection": {
+    "style": "warm stylized casual food game",
+    "palette": [
+      "#6B3524",
+      "#F4B95D",
+      "#FBE7C3"
+    ],
+    "assetStrategy": "hybrid",
+    "motion": "CSS food entry and WebP FX"
+  },
+  "acceptanceCriteria": [
+    "Validate reversed tap order against displayed order",
+    "Reset clears picks only, preserving score, timer and hearts",
+    "Quiz opens after every successful stick and pauses timer",
+    "Game fits mobile portrait and centers on desktop"
+  ]
+}
